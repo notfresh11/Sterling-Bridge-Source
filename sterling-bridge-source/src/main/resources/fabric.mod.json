@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "sterling-bridge",
+  "version": "${version}",
+  "name": "Sterling Bridge",
+  "description": "Server-side bridge mod connecting Minecraft players to Sterling's AutoMod Launcher ecosystem.",
+  "authors": [
+    "Sterling Team"
+  ],
+  "contact": {
+    "homepage": "https://sterling.net"
+  },
+  "environment": "server",
+  "entrypoints": {
+    "preLaunch": [
+      "net.sterling.bridge.SterlingBridgePreLaunch"
+    ],
+    "main": [
+      "net.sterling.bridge.SterlingBridgeMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": ">=0.163.0",
+    "minecraft": ">=26.3",
+    "java": ">=25"
+  }
+}
